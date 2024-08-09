@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Datos</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form id="registrationForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required min="1">
+
+        <label for="cedula">Cédula:</label>
+        <input type="text" id="cedula" name="cedula" required>
+
+        <input type="submit" value="Registrar">
+    </form>
+
+    <h1>Buscar Usuario</h1>
+    <form id="searchForm">
+        <label for="searchCedula">Cédula:</label>
+        <input type="text" id="searchCedula" name="searchCedula" required>
+        <input type="submit" value="Buscar">
+    </form>
+    <div id="searchResult"></div>
+
+    <h1>Ver Todos los Usuarios</h1>
+    <button id="viewAllBtn">Ver Todos</button>
+    <div id="allUsers"></div>
+
+    <script src="/datos.js"></script>
+</body>
+</html>
